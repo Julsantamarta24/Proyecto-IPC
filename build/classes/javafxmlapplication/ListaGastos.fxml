@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="476.0" prefWidth="160.0" style="-fx-background-color: dcbadc;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="3.0" layoutY="81.0" prefHeight="321.0" prefWidth="151.0" AnchorPane.topAnchor="81.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="132.0" style="-fx-background-color: White; -fx-text-fill: Black;" text="Volver">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/volver.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="12.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="132.0" style="-fx-background-color: White; -fx-text-fill: Black;" text="Añadir Gasto">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="12.0" top="15.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="132.0" style="-fx-background-color: White; -fx-text-fill: Black;" text="Ver Gastos">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="12.0" top="15.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/gastos.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <MenuButton alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="33.0" prefWidth="132.0" style="-fx-background-color: White;" text="Categorías" textAlignment="CENTER">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Ver Categorías">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                           </items>
+                        </Menu>
+                        <MenuItem mnemonicParsing="false" text="Crear Categoría" />
+                        <MenuItem mnemonicParsing="false" text="Borrar Categoría" />
+                     </items>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/categorias.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="12.0" top="15.0" />
+                     </VBox.margin>
+                  </MenuButton>
+                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="132.0" style="-fx-background-color: White; -fx-text-fill: Black;" text="Perfil">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="12.0" top="15.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/perfil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="132.0" style="-fx-background-color: Purple;" text="Cerrar Sesión" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="12.0" top="15.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/log_out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="100.0" styleClass="menu_logo" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../cositas/Trabajo_IPC-main/IPC_trabajo/src/Resources/icons/Ahorros.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="My">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text id="Wise" strokeType="OUTSIDE" strokeWidth="0.0" text="Financia">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
