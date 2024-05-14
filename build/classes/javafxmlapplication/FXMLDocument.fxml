@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.FXMLDocumentController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: FFFF;" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowSpan="4">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO A MYFINANCIA ONLINE">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Administra tus finanzas y mejora tus hábitos de ahorro con esta app" wrappingWidth="300.0">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <TextField id="Usuario" fx:id="UserField" alignment="TOP_LEFT" promptText="Usuario">
+                     <HBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <PasswordField fx:id="PasswordField" alignment="TOP_LEFT" promptText="Contraseña">
+                     <HBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <VBox prefHeight="700.0">
+               <children>
+                  <HBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFF;">
+                     <children>
+                        <Button fx:id="Inicio" alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#InicioOnAction" text="Iniciar Sesión">
+                           <HBox.margin>
+                              <Insets left="90.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="errorInicio" prefHeight="82.0" prefWidth="300.0" text="No se ha podido iniciar sesión. Compruebe su usario o contraseña de nuevo." textAlignment="CENTER" textFill="RED" visible="false" wrapText="true">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="272.0" style="-fx-background-color: dcbadc;" GridPane.columnSpan="3" GridPane.rowSpan="5">
+         <children>
+            <HBox prefHeight="270.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="250.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/2018a0dd73f0f6d68a0e9d2c8bbdb984-mano-con-icono-de-dinero.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox>
+               <children>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="¿Usuario nuevo? ¡Regístrate!" underline="true">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="Registro" mnemonicParsing="false" onAction="#goToRegister" text="Registrarse">
+                     <VBox.margin>
+                        <Insets left="110.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </VBox>
+   </children>
+</GridPane>
